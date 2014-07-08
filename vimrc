@@ -26,3 +26,7 @@ set listchars=tab:»\ ,trail:¬
 
 " Custom statusline.
 set statusline=\ %f%m%r%h%w\ %=%([%{&ff}\|%{(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\")}%k\|%Y]%)\ %([%l\/%L\|%c][%p%%]\ %)
+
+" CTRL-c CTRL-v
+map <C-c> "+y<CR>
+map <C-v> "+gP<CR>
